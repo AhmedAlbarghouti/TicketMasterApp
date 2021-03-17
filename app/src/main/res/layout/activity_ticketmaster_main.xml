@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TicketMasterMain"
+
+    >
+
+
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:background="@color/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textCapSentences"
+            android:hint="@string/city"
+            android:layout_weight="1"
+            android:autofillHints=""
+
+            />
+
+        <EditText
+            android:id="@+id/radiusEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/radius"
+            android:inputType="numberDecimal"
+
+            android:layout_weight="1"
+            android:autofillHints="" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:src="@drawable/ic_baseline_search_24"
+            android:contentDescription="@string/search_button" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:src="@drawable/ic_baseline_help_24"
+
+            android:contentDescription="@string/help_button" />
+
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/eventSearchList"
+        android:layout_below="@id/topBar"
+        android:layout_above="@id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <ImageButton
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_clear_all_24"
+            android:contentDescription="@string/clear_list_button" />
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/pBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/progressBarStyleHorizontal"
+            />
+        <ImageButton
+            android:id="@+id/favoritesListButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_favorite_24"
+            android:contentDescription="@string/go_to_favorites_button" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

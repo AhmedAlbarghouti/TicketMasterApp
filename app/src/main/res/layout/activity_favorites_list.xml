@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FavoritesList">
+
+    <TextView
+        android:id="@+id/favoriteListHeadText"
+        android:text="Favorites List"
+        android:textSize="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/Toolbar"
+        />
+    <ListView
+        android:id="@+id/favoritesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:layout_below="@id/favoriteListHeadText"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageButton
+            android:id="@+id/backToMenu"
+            android:layout_below="@id/favoritesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

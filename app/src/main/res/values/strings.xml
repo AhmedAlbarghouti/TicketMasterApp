@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TicketMasterApp</string>
+    <string name="city">City...</string>
+    <string name="radius">Radius....</string>
+    <string name="search_button">SearchButton</string>
+    <string name="help_button">Help Button</string>
+    <string name="clear_list_button">"Clears list "</string>
+    <string name="go_to_favorites_button">Goes to FavoritesList Activity</string>
+</resources>
